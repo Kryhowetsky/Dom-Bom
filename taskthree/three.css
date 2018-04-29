@@ -1,0 +1,12 @@
+
+body {
+    margin-top: 50px;
+    background: #119ef5;
+}
+
+.download-message {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}

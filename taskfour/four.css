@@ -1,0 +1,13 @@
+
+body {
+    background: #3498db;
+}
+
+
+.lang {
+    display: none;
+}
+
+.lang.visible {
+    display: inline;
+}

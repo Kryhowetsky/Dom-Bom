@@ -1,0 +1,31 @@
+
+body {
+    background: darkorange;
+}
+
+.button {
+    background: #3498db;
+    border-radius: 37px;
+    box-shadow: 5px 4px 3px #1331d6;
+    font-family: "Comic Sans MS", Arial,sans-serif;
+    color: #ffffff;
+    font-size: 29px;
+    padding: 11px 22px 9px 21px;
+    border: solid #1f628d 1px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #119ef5;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+a {
+    text-decoration: none;
+}
+
