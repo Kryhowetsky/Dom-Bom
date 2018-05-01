@@ -7,7 +7,7 @@ var getCurrentLanguage = function () {
     var currentLanguage = localStorage.getItem('language');
     var defaultLanguage = 'ua';
 
-    if (currentLanguage == null)
+    if (currentLanguage == null  && currentLanguage == "undefined")
         currentLanguage = defaultLanguage;
 
     return currentLanguage;
@@ -29,7 +29,7 @@ function setLanguage() {
 }
 
 
-// $<prefix> == DOMElement
+
 var $save = document.querySelector('html body button#save')
 setLanguage();
 
@@ -47,3 +47,11 @@ function getSettedLanguage() {
     if (isUa)
         return 'ua';
 }
+
+var rest = document.getElementById('reset');
+
+function DoReset() {
+    localStorage.clear();
+}
+
+rest.addEventListener('click', DoReset)
