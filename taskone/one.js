@@ -28,11 +28,13 @@ function getForm() {
     var inputAge = getInputText();
     inputAge.setAttribute('name', 'age');
     inputAge.setAttribute('pattern', '[0-9]{0,}');
+    inputAge.setAttribute('placeholder', 'type your age');
     form.appendChild(inputAge);
 
     var inputUsername = getInputText();
     inputUsername.setAttribute('name', 'username');
     inputUsername.setAttribute('pattern', 'user_[a-zA-Z0-9@\.]{0,}');
+    inputUsername.setAttribute('placeholder', 'type user_ and after name');
     form.appendChild(inputUsername);
 
     var inputDate = getInputText();
@@ -44,7 +46,11 @@ function getForm() {
     var submit = document.createElement('input');
     submit.setAttribute('type', 'submit');
     submit.setAttribute('value', 'Validate Me');
+    submit.id = 'butt';
+    submit.setAttribute('type', 'button');
     form.appendChild(submit);
+
+
 
     return form;
 }
@@ -75,3 +81,9 @@ function getInputText() {
 
     return input;
 }
+
+butt.addEventListener('click', doo)
+function doo() {
+    alert('ok');
+}
+
