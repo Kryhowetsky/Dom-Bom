@@ -7,7 +7,7 @@ var getCurrentLanguage = function () {
     var currentLanguage = localStorage.getItem('language');
     var defaultLanguage = 'ua';
 
-    if (currentLanguage == null  && currentLanguage == "undefined")
+    if (currentLanguage == null  || currentLanguage == "undefined")
         currentLanguage = defaultLanguage;
 
     return currentLanguage;
