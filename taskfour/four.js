@@ -46,6 +46,10 @@ function getSettedLanguage() {
     var isUa = document.getElementById('lang-ua').checked;
     if (isUa)
         return 'ua';
+
+    var isRu = document.getElementById('lang-ru').checked;
+    if (isRu)
+        return 'ru';
 }
 
 var rest = document.getElementById('reset');
