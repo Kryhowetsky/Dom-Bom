@@ -46,8 +46,8 @@ function getForm() {
     var submit = document.createElement('input');
     submit.setAttribute('type', 'submit');
     submit.setAttribute('value', 'Validate Me');
-    submit.id = 'butt';
-    submit.setAttribute('type', 'button');
+    // submit.id = 'butt';
+    // submit.setAttribute('type', 'button');
     form.appendChild(submit);
 
 
@@ -82,8 +82,8 @@ function getInputText() {
     return input;
 }
 
-butt.addEventListener('click', doo)
-function doo() {
-    alert('ok');
-}
+// butt.addEventListener('click', doo)
+// function doo() {
+//     alert('ok');
+// }
 
