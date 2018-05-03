@@ -23,7 +23,7 @@ function validateDate(date) {
 function getForm() {
     var form = document.createElement('form');
     form.setAttribute("name", "login");
-    form.setAttribute("action", "google.com");
+    form.setAttribute("action", "../");
 
     var inputAge = getInputText();
     inputAge.setAttribute('name', 'age');
@@ -46,9 +46,8 @@ function getForm() {
     var submit = document.createElement('input');
     submit.setAttribute('type', 'submit');
     submit.setAttribute('value', 'Validate Me');
-    // submit.id = 'butt';
-    // submit.setAttribute('type', 'button');
     form.appendChild(submit);
+
 
 
 
@@ -82,8 +81,5 @@ function getInputText() {
     return input;
 }
 
-// butt.addEventListener('click', doo)
-// function doo() {
-//     alert('ok');
-// }
+
 
